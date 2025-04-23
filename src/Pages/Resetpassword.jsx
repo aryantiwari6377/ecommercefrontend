@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-
+import {resetpasswordService} from '../services/authenticationService';
 function Resetpassword() {
   const [newpassword, setnewpassword] = useState("");
   const { token } = useParams();
