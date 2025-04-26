@@ -33,8 +33,8 @@ import Paypalpage from './Pages/Paypalpage';
 import B from './Pages/B';
 
 import Product40off from './Pages/Product40off';
-import Product50off from './Pages/Product40off';
-import Product60off from './Pages/Product40off';
+import Product50off from './Pages/Product50off';
+import Product60off from './Pages/Product60off';
 import Shoes from './Pages/shoes';
 import Shirt from './Pages/Shirt';
 import Furniture from './Pages/Furniture';

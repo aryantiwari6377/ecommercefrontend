@@ -111,7 +111,7 @@ function Homeproducts() {
   return (
     <div className="homepageproducts overflow-x-scroll">
       {productCategories.map(({ id, imgSrc, label }) => (
-        <div key={id} className="homepageproduct" onClick={() => handleNavigation(id)}>
+        <div key={id} className="homepageproduct cursor-pointer" onClick={() => handleNavigation(id)}>
           <div className="divimg">
             <img src={imgSrc} alt={label} className="homepage-product-img" />
           </div>

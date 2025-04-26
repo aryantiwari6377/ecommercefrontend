@@ -48,7 +48,7 @@ const productpageopen = (productid) => {
     {userorder.length > 0 ? (
       userorder.map(order => (
         <div  className='flex justify-between mb-6 mt-10 bg-[rgb(255,255,255)] p-4 rounded-2xl shadow-xl'>
-          <div className='flex  gap-60'  onClick={()=>{productpageopen(order.productId)}}>
+          <div className='flex gap-[90px] sm:gap-60'  onClick={()=>{productpageopen(order.productId)}}>
             <div className='h-[100px] w-[80px]'>
               <img src={order.imageUrl} alt={order.name} className='h-full'/>
             </div>

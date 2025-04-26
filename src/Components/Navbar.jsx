@@ -150,7 +150,7 @@ function Navbar() {
           <Link to="/" onClick={closeMobileMenu} className='py-4'><FontAwesomeIcon className="ficon" icon={faHome} /><span className='ml-1'>Home</span></Link>
           {/* <Link to="/profile" onClick={closeMobileMenu} className='py-4'><FontAwesomeIcon className="ficon" icon={faUser} /><span className='ml-1'>Profile</span></Link> */}
         
-          <div className="relative py-4">
+          <div className="relative py-4 cursor-pointer">
             <FontAwesomeIcon className="ficon" onClick={toggleSlider} icon={faShoppingCart} />
             {cartLength > 0 && (
               <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full px-2 py-1">

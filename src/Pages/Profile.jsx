@@ -88,7 +88,7 @@ function Profile() {
           <div className='rounded-full p-2'>
             <img src={profileUrl || User} className='rounded-full w-24 h-24' alt='Profile' />
           </div>
-          <div className='mt-[90px]'>
+          <div className='mt-[90px] mr-[20px]'>
             <FontAwesomeIcon icon={faEdit} className="cursor-pointer" onClick={handleEditClick} />
             <input
               type="file"

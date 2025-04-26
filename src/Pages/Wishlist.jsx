@@ -10,6 +10,11 @@ function Wishlist() {
   const [Wishlist, setWishlist] = useState([]); 
   const navigate = useNavigate();
     
+  const shortenName = (name) => {
+    const words = name.trim().split(' ');
+    return words.length > 2 ? words.slice(0, 2).join(' ') + '...' : name;
+  };
+  
   const deletewishproduct = async(productId) => {
  
     const response = await deletewishService(productId);  
@@ -45,7 +50,7 @@ function Wishlist() {
 
   return (
     <div className='mt-32'>
-      <div className='font-bold flex list-none justify-between w-[50%] ml-[44%] text-xl'><li>Product</li><li>Price</li></div>
+      <div className='font-bold flex list-none justify-between w-[45%] ml-[46%] text-xl'><li>Product</li><li>Price</li></div>
       {Wishlist && Wishlist.length > 0 ? ( 
         Wishlist.map(item => (
           <div key={item.productId} className='mt-10 bg-[rgb(255,255,255)] p-4 rounded-2xl shadow-xl' >
@@ -53,7 +58,7 @@ function Wishlist() {
               <div className='h-[100px] w-[172px]'> 
                 <img src={item.imageUrl} alt={item.name} className='h-[70px] w-[80px] ml-[46px]'/>
               </div>
-              <div >{item.name}</div>
+              <div >{shortenName(item.name)}</div>
               <div className='w-[60px]'>{item.price}</div>
             </div>
             <div className='flex justify-end gap-4 text-red-500'>
