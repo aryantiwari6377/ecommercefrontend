@@ -24,6 +24,7 @@ function Loginpage() {
         localStorage.setItem('token', token);
         navigate("/home");
       }
+   
     } catch (error) {
       if (error.response) {
         alert(error.response.data.message || 'An error occurred');

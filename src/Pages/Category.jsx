@@ -780,7 +780,7 @@ function ProductList({ category }) {
         </div>
       ) : (
         <div className="bg-white rounded-lg shadow-md p-10 text-center">
-          <h3 className="text-xl font-medium text-gray-500">Loading</h3>
+          <h3 className="text-xl font-medium text-gray-500">Loading....</h3>
          
         </div>
       )}

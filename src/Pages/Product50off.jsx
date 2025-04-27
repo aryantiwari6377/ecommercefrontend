@@ -184,8 +184,7 @@ function Product50off() {
         </div>
       ) : (
         <div className="bg-white rounded-lg shadow-md p-10 text-center">
-          <h3 className="text-xl font-medium text-gray-500">No products found</h3>
-          <p className="mt-2 text-gray-400">Try changing your search or filter criteria</p>
+         <p>Loading.....</p>
         </div>
       )}
     </div>
